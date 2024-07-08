@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Silicone Hand Measurement Record Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .image-form-group {
+            margin-bottom: 30px;
+        }
+        .image-with-inputs {
+            display: flex;
+            align-items: center;
+        }
+        .background-image {
+            width: 50%;
+            height: auto;
+        }
+        .input-fields {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+        .input-fields span {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Silicone Hand Measurement Record Form</h1>
+        <h2>-- Symbionic Tech Pvt, Ltd. --</h2>
+        <div class="form-group">
+            <label>Name:</label>
+            <p>{{name}}</p>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <p>{{gender}}</p>
+        </div>
+        <div class="form-group">
+            <label>Age:</label>
+            <p>{{age}}</p>
+        </div>
+        <div class="form-group">
+            <label>Skin:</label>
+            <p>{{skin}}</p>
+        </div>
+        <div class="form-group">
+            <label>Position:</label>
+            <p>{{position}}</p>
+        </div>
+        <div class="form-group">
+            <label>Date:</label>
+            <p>{{date}}</p>
+        </div>
+        <div class="form-group">
+            <label>Which Arm is Amputated?</label>
+            <p>{{amputated_arm}}</p>
+        </div>
+
+        <div class="image-form-group">
+            <h3>Normal Hand Measurements</h3>
+            <div class="image-with-inputs">
+                <img src="data:image/png;base64,{{base64NormalHand}}" alt="Normal Hand Measurements" class="background-image">
+                <div class="input-fields">
+                    <span>A: {{a}}</span>
+                    <span>B: {{b}}</span>
+                    <span>C: {{c}}</span>
+                    <span>D: {{d}}</span>
+                    <span>E: {{e}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-form-group">
+            <h3>Wrist Measurements</h3>
+            <div class="image-with-inputs">
+                <img src="data:image/png;base64,{{base64Wrist}}" alt="Wrist Measurements" class="background-image">
+                <div class="input-fields">
+                    <span>A1: {{a1}}</span>
+                    <span>B1: {{b1}}</span>
+                    <span>C1: {{c1}}</span>
+                    <span>D1: {{d1}}</span>
+                    <span>E1: {{e1}}</span>
+                    <span>F1: {{f1}}</span>
+                    <span>A2: {{a2}}</span>
+                    <span>B2: {{b2}}</span>
+                    <span>C2: {{c2}}</span>
+                    <span>D2: {{d2}}</span>
+                    <span>E2: {{e2}}</span>
+                    <span>F2: {{f2}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-form-group">
+            <h3>Transradial Amputee Measurements</h3>
+            <div class="image-with-inputs">
+                <img src="data:image/png;base64,{{base64Transradial}}" alt="Transradial Measurements" class="background-image">
+                <div class="input-fields">
+                    <span>G: {{g}}</span>
+                    <span>H: {{h}}</span>
+                    <span>I: {{i}}</span>
+                    <span>J: {{j}}</span>
+                    <span>K: {{k}}</span>
+                    <span>L: {{l}}</span>
+                    <span>P: {{p}}</span>
+                    <span>Q: {{q}}</span>
+                    <span>R: {{r}}</span>
+                    <span>S: {{s}}</span>
+                    <span>T: {{t}}</span>
+                    <span>U: {{u}}</span>
+                    <span>V: {{v}}</span>
+                    <span>W: {{w}}</span>
+                    <span>X: {{x}}</span>
+                    <span>Y: {{y}}</span>
+                    <span>Z: {{z}}</span>
+                    <span>X1: {{x1}}</span>
+                    <span>X2: {{x2}}</span>
+                    <span>X3: {{x3}}</span>
+                    <span>X4: {{x4}}</span>
+                    <span>X5: {{x5}}</span>
+                    <span>X6: {{x6}}</span>
+                    <span>X7: {{x7}}</span>
+                    <span>X8: {{x8}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-form-group">
+            <h3>Transhumeral Amputee Measurements</h3>
+            <div class="image-with-inputs">
+                <img src="data:image/png;base64,{{base64Transhumeral}}" alt="Transhumeral Measurements" class="background-image">
+                <div class="input-fields">
+                    <span>P: {{p}}</span>
+                    <span>Q: {{q}}</span>
+                    <span>X: {{x}}</span>
+                    <span>Y: {{y}}</span>
+                    <span>Z: {{z}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

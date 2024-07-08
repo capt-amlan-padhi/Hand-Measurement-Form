@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicone Hand Measurement Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Silicone Hand Measurement Record Form</h1>
+        <h2>-- Symbionic Tech Pvt, Ltd. --</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="options">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="skin">Skin:</label>
+                <input type="text" id="skin" name="skin" required>
+            </div>
+            <div class="form-group">
+                <label>Position:</label>
+                <div class="options">
+                    <input type="radio" id="left" name="position" value="Left" required>
+                    <label for="left">Left</label>
+                    <input type="radio" id="right" name="position" value="Right" required>
+                    <label for="right">Right</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label>Which Arm is Amputated?</label>
+                <div class="options">
+                    <input type="radio" id="left-arm" name="amputated_arm" value="Left" required>
+                    <label for="left-arm">Left</label>
+                    <input type="radio" id="right-arm" name="amputated_arm" value="Right" required>
+                    <label for="right-arm">Right</label>
+                </div>
+            </div>
+
+            <div class="image-form-group">
+                <h3>Normal Hand Measurements</h3>
+                <div class="image-with-inputs">
+                    <img src="normal_hand_measurements.png" alt="Normal Hand Measurements" class="background-image">
+                    <div class="input-fields">
+                        <table>
+                            <tr>
+                                <td><input type="text" name="a" placeholder="A"></td>
+                                <td><input type="text" name="b" placeholder="B"></td>
+                                <td><input type="text" name="c" placeholder="C"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="d" placeholder="D"></td>
+                                <td><input type="text" name="e" placeholder="E"></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-form-group">
+                <h3>Wrist Measurements</h3>
+                <div class="image-with-inputs">
+                    <img src="wrist_measurements.png" alt="Wrist Measurements" class="background-image">
+                    <div class="input-fields">
+                        <table>
+                            <tr>
+                                <td><input type="text" name="a1" placeholder="A1"></td>
+                                <td><input type="text" name="b1" placeholder="B1"></td>
+                                <td><input type="text" name="c1" placeholder="C1"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="d1" placeholder="D1"></td>
+                                <td><input type="text" name="e1" placeholder="E1"></td>
+                                <td><input type="text" name="f1" placeholder="F1"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="a2" placeholder="A2"></td>
+                                <td><input type="text" name="b2" placeholder="B2"></td>
+                                <td><input type="text" name="c2" placeholder="C2"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="d2" placeholder="D2"></td>
+                                <td><input type="text" name="e2" placeholder="E2"></td>
+                                <td><input type="text" name="f2" placeholder="F2"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-form-group">
+                <h3>Transradial Amputee Measurements</h3>
+                <div class="image-with-inputs">
+                    <img src="transradial_measurements.png" alt="Transradial Measurements" class="background-image">
+                    <div class="input-fields">
+                        <table>
+                            <tr>
+                                <td><input type="text" name="g" placeholder="G"></td>
+                                <td><input type="text" name="h" placeholder="H"></td>
+                                <td><input type="text" name="i" placeholder="I"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="j" placeholder="J"></td>
+                                <td><input type="text" name="k" placeholder="K"></td>
+                                <td><input type="text" name="l" placeholder="L"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="p" placeholder="P"></td>
+                                <td><input type="text" name="q" placeholder="Q"></td>
+                                <td><input type="text" name="r" placeholder="R"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="s" placeholder="S"></td>
+                                <td><input type="text" name="t" placeholder="T"></td>
+                                <td><input type="text" name="u" placeholder="U"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="v" placeholder="V"></td>
+                                <td><input type="text" name="w" placeholder="W"></td>
+                                <td><input type="text" name="x" placeholder="X"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="y" placeholder="Y"></td>
+                                <td><input type="text" name="z" placeholder="Z"></td>
+                                <td><input type="text" name="x1" placeholder="X1"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="x2" placeholder="X2"></td>
+                                <td><input type="text" name="x3" placeholder="X3"></td>
+                                <td><input type="text" name="x4" placeholder="X4"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="x5" placeholder="X5"></td>
+                                <td><input type="text" name="x6" placeholder="X6"></td>
+                                <td><input type="text" name="x7" placeholder="X7"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="x8" placeholder="X8"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-form-group">
+                <h3>Transhumeral Amputee Measurements</h3>
+                <div class="image-with-inputs">
+                    <img src="transhumeral_measurements.png" alt="Transhumeral Measurements" class="background-image">
+                    <div class="input-fields">
+                        <table>
+                            <tr>
+                                <td><input type="text" name="p" placeholder="P"></td>
+                                <td><input type="text" name="q" placeholder="Q"></td>
+                                <td><input type="text" name="x" placeholder="X"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="y" placeholder="Y"></td>
+                                <td><input type="text" name="z" placeholder="Z"></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <p>Attention: Fill the circumference in the circle, fill the length in the square, and write the circumference of the ring finger and little finger on the picture.</p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
