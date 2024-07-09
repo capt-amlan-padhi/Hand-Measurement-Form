@@ -54,6 +54,3 @@ app.post('/submit', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
-
-// this works fine now.
-// Next what I want to do is, the cells to enter the measurements are appearing in vertical and linear manner. I want them to appear in a tabular form, like side to side. and other things like `Gender:`, `Position:` and stuff to be printed next to it.

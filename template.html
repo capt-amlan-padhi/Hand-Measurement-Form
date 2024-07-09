@@ -11,6 +11,7 @@
             width: 100%;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
         }
         .form-group {
             margin-bottom: 20px;
@@ -23,26 +24,22 @@
         .image-form-group {
             margin-bottom: 30px;
         }
-        .image-with-inputs {
-            display: flex;
-            align-items: center;
-        }
-        .background-image {
-            width: 50%;
+        .image-container {
+            position: relative;
+            width: 500px; /* Set fixed width */
             height: auto;
         }
-        .input-fields {
-            display: flex;
-            flex-direction: column;
-            padding-left: 20px;
+        .background-image {
+            width: 100%;
+            height: auto;
         }
-        .input-fields span {
-            margin-bottom: 10px;
+        .input-box {
+            position: absolute;
+            width: 50px;
             padding: 5px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 100px;
-            background: #f9f9f9;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
         }
     </style>
 </head>
@@ -81,84 +78,75 @@
 
         <div class="image-form-group">
             <h3>Normal Hand Measurements</h3>
-            <div class="image-with-inputs">
+            <div class="image-container">
                 <img src="data:image/png;base64,{{base64NormalHand}}" alt="Normal Hand Measurements" class="background-image">
-                <div class="input-fields">
-                    <span>A: {{a}}</span>
-                    <span>B: {{b}}</span>
-                    <span>C: {{c}}</span>
-                    <span>D: {{d}}</span>
-                    <span>E: {{e}}</span>
-                </div>
+                <div class="input-box" style="top: 173px; left: 75px;">A: {{a}}</div>
+                <div class="input-box" style="top: 320px; left: 75px;">B: {{b}}</div>
+                <div class="input-box" style="top: 191px; left: 214px;">C: {{c}}</div>
+                <div class="input-box" style="top: 324px; left: 214px;">D: {{d}}</div>
+                <div class="input-box" style="top: 394px; left: 214px;">E: {{e}}</div>
             </div>
         </div>
 
         <div class="image-form-group">
             <h3>Wrist Measurements</h3>
-            <div class="image-with-inputs">
+            <div class="image-container">
                 <img src="data:image/png;base64,{{base64Wrist}}" alt="Wrist Measurements" class="background-image">
-                <div class="input-fields">
-                    <span>A1: {{a1}}</span>
-                    <span>B1: {{b1}}</span>
-                    <span>C1: {{c1}}</span>
-                    <span>D1: {{d1}}</span>
-                    <span>E1: {{e1}}</span>
-                    <span>F1: {{f1}}</span>
-                    <span>A2: {{a2}}</span>
-                    <span>B2: {{b2}}</span>
-                    <span>C2: {{c2}}</span>
-                    <span>D2: {{d2}}</span>
-                    <span>E2: {{e2}}</span>
-                    <span>F2: {{f2}}</span>
-                </div>
+                <div class="input-box" style="top: 88px; left: 194px;">A1: {{a1}}</div>
+                <div class="input-box" style="top: 158px; left: 186px;">B1: {{b1}}</div>
+                <div class="input-box" style="top: 98px; left: 257px;">C1: {{c1}}</div>
+                <div class="input-box" style="top: 156px; left: 252px;">D1: {{d1}}</div>
+                <div class="input-box" style="top: 224px; left: 290px;">E1: {{e1}}</div>
+                <div class="input-box" style="top: 85px; left: 64px;">F1: {{f1}}</div>
+                <div class="input-box" style="top: 95px; left: 516px;">A2: {{a2}}</div>
+                <div class="input-box" style="top: 158px; left: 521px;">B2: {{b2}}</div>
+                <div class="input-box" style="top: 102px; left: 457px;">C2: {{c2}}</div>
+                <div class="input-box" style="top: 160px; left: 458px;">D2: {{d2}}</div>
+                <div class="input-box" style="top: 232px; left: 423px;">E2: {{e2}}</div>
+                <div class="input-box" style="top: 89px; left: 658px;">F2: {{f2}}</div>
             </div>
         </div>
 
         <div class="image-form-group">
             <h3>Transradial Amputee Measurements</h3>
-            <div class="image-with-inputs">
+            <div class="image-container">
                 <img src="data:image/png;base64,{{base64Transradial}}" alt="Transradial Measurements" class="background-image">
-                <div class="input-fields">
-                    <span>G: {{g}}</span>
-                    <span>H: {{h}}</span>
-                    <span>I: {{i}}</span>
-                    <span>J: {{j}}</span>
-                    <span>K: {{k}}</span>
-                    <span>L: {{l}}</span>
-                    <span>P: {{p}}</span>
-                    <span>Q: {{q}}</span>
-                    <span>R: {{r}}</span>
-                    <span>S: {{s}}</span>
-                    <span>T: {{t}}</span>
-                    <span>U: {{u}}</span>
-                    <span>V: {{v}}</span>
-                    <span>W: {{w}}</span>
-                    <span>X: {{x}}</span>
-                    <span>Y: {{y}}</span>
-                    <span>Z: {{z}}</span>
-                    <span>X1: {{x1}}</span>
-                    <span>X2: {{x2}}</span>
-                    <span>X3: {{x3}}</span>
-                    <span>X4: {{x4}}</span>
-                    <span>X5: {{x5}}</span>
-                    <span>X6: {{x6}}</span>
-                    <span>X7: {{x7}}</span>
-                    <span>X8: {{x8}}</span>
-                </div>
+                <div class="input-box" style="top: 595px; left: 85px;">G: {{g}}</div>
+                <div class="input-box" style="top: 563px; left: 233px;">H: {{h}}</div>
+                <div class="input-box" style="top: 716px; left: 86px;">I: {{i}}</div>
+                <div class="input-box" style="top: 720px; left: 231px;">J: {{j}}</div>
+                <div class="input-box" style="top: 187px; left: 484px;">K: {{k}}</div>
+                <div class="input-box" style="top: 668px; left: 303px;">L: {{l}}</div>
+                <div class="input-box" style="top: 179px; left: 95px;">P: {{p}}</div>
+                <div class="input-box" style="top: 142px; left: 154px;">Q: {{q}}</div>
+                <div class="input-box" style="top: 172px; left: 298px;">R: {{r}}</div>
+                <div class="input-box" style="top: 187px; left: 385px;">S: {{s}}</div>
+                <div class="input-box" style="top: 277px; left: 144px;">T: {{t}}</div>
+                <div class="input-box" style="top: 373px; left: 141px;">U: {{u}}</div>
+                <div class="input-box" style="top: 317px; left: 48px;">V: {{v}}</div>
+                <div class="input-box" style="top: 120px; left: 612px;">W: {{w}}</div>
+                <div class="input-box" style="top: 244px; left: 679px;">X: {{x}}</div>
+                <div class="input-box" style="top: 284px; left: 625px;">Y: {{y}}</div>
+                <div class="input-box" style="top: 168px; left: 532px;">Z: {{z}}</div>
+                <div class="input-box" style="top: 509px; left: 730px;">X1: {{x1}}</div>
+                <div class="input-box" style="top: 560px; left: 733px;">X2: {{x2}}</div>
+                <div class="input-box" style="top: 600px; left: 714px;">X3: {{x3}}</div>
+                <div class="input-box" style="top: 647px; left: 716px;">X4: {{x4}}</div>
+                <div class="input-box" style="top: 682px; left: 718px;">X5: {{x5}}</div>
+                <div class="input-box" style="top: 719px; left: 719px;">X7: {{x7}}</div>
+                <div class="input-box" style="top: 750px; left: 714px;">X8: {{x8}}</div>
             </div>
         </div>
 
         <div class="image-form-group">
             <h3>Transhumeral Amputee Measurements</h3>
-            <div class="image-with-inputs">
+            <div class="image-container">
                 <img src="data:image/png;base64,{{base64Transhumeral}}" alt="Transhumeral Measurements" class="background-image">
-                <div class="input-fields">
-                    <span>P: {{p}}</span>
-                    <span>Q: {{q}}</span>
-                    <span>X: {{x}}</span>
-                    <span>Y: {{y}}</span>
-                    <span>Z: {{z}}</span>
-                </div>
+                <div class="input-box" style="top: 240px; left: 106px;">P: {{p}}</div>
+                <div class="input-box" style="top: 200px; left: 242px;">Q: {{q}}</div>
+                <div class="input-box" style="top: 183px; left: 702px;">X: {{x}}</div>
+                <div class="input-box" style="top: 226px; left: 702px;">Y: {{y}}</div>
+                <div class="input-box" style="top: 269px; left: 702px;">Z: {{z}}</div>
             </div>
         </div>
     </div>

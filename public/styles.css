@@ -31,37 +31,25 @@ body {
     margin-bottom: 30px;
 }
 
-.image-with-inputs {
-    display: flex;
-    align-items: center;
-}
-
-.background-image {
-    width: 50%;
+.image-container {
+    position: relative;
+    width: fit-content; /* Adjust to match the image width */
     height: auto;
 }
 
-.input-fields {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-}
-
-.input-fields table {
+.background-image {
+    display: block;
     width: 100%;
-    border-collapse: collapse;
+    height: auto;
 }
 
-.input-fields table td {
-    padding: 5px;
-}
-
-.input-fields input[type="text"] {
-    width: 100px;
+.input-box {
+    position: absolute;
+    width: 50px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background: #f9f9f9;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
 }
 
 button {
